@@ -10,7 +10,7 @@ namespace Codegen
         [Test]
         public async Task MyTest()
         {
-            var context = await Browser.NewContextAsync(new() { RecordVideoDir = "C:\\Users\\james\\source\\repos\\Codegen\\Codegen\\Videos\\" });
+            var context = await Browser.NewContextAsync(new() { RecordVideoDir = "C:\\Users\\james\\source\\repos\\Codegen\\Codegen\\Videos\\wideo.mp4" });
             var Page = await context.NewPageAsync();
             await Page.GotoAsync("https://localhost:44391/Product/Index");
             await Page.ScreenshotAsync(new() { Path = "C:\\Users\\james\\source\\repos\\Codegen\\Codegen\\Screenshots\\pretest.png" });
